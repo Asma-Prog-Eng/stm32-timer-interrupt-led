@@ -84,22 +84,7 @@ int main(void){
 
 
 
-	while(1) {
-
-
-		// Loop until the update event flag is set
-
-
-		while (!(TIM2->SR & TIM_SR_UIF)) ;
-
-		TIM2->SR &= ~(1U << 0);
-
-
-	    // The required time delay has been elapsed
-		// User code can be executed
-		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_10);
-
-	}
+	while(1);
 
     return 0 ;
 
