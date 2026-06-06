@@ -41,9 +41,11 @@ To trigger the hardware interrupt at the exact intervals, the 16-bit **TIM2** re
 
 ## Hardware Verification & Visuals
 
-To verify the precision of the interrupt execution, the output waveforms were captured and analyzed using a hardware logic analyzer and **PulseView** open-source software. 
+To verify the precision of the interrupt execution, the output waveforms were captured and analyzed using a hardware logic analyzer and **Logoc 2** open-source software. 
 
 ### Timing Diagrams
 The captures confirm that the GPIO toggles precisely within the Interrupt Service Routine at the expected hardware-timed intervals:
 *   **100 ms Mode:** Generates a precise 100 ms high/low pulse width (5 Hz frequency).
-<img width="1919" height="740" alt="100ms-interrupt" src="https://github.com/user-attachments/assets/7d486277-4431-4ddf-8077-3b8228687ab9" />
+*   
+<img width="1872" height="416" alt="image" src="https://github.com/user-attachments/assets/b1cdf925-37ce-4192-ae77-8fec3279caf5" />
+
