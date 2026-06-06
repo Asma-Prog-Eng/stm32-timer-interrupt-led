@@ -223,8 +223,18 @@ void TIMER2_Init(void) {
 
 	}
 
-
 }
+void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef *htimer){
+
+	// User code can be executed
+
+	// Toggle the LED pin
+	// Check if the interrupt was triggered specifically by Timer 2 
+	    if (htimer->Instance == TIM2) {
+	    	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_10);
+	    }
+}
+
 void Print_Freq(void) {
 
 	    // display SYSCLK Feq.
