@@ -18,13 +18,12 @@ void SysTick_Handler(void) {
 	HAL_SYSTICK_IRQHandler();
 }
 
-/*
+
 void TIM2_IRQHandler(void) {
 
-	//2. Toggle PA5 for 1 ms : when couner value of timer 2 is reached
+	//1. Clear status flag
+	TIM2->SR &= ~(1U << 0);
+	//2. Toggle PA10 for 100 ms 
+	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_10);
 
-	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-
-
-
-}*/
+}
