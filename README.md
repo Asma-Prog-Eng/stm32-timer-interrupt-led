@@ -46,6 +46,5 @@ To verify the precision of the interrupt execution, the output waveforms were ca
 ### Timing Diagrams
 The captures confirm that the GPIO toggles precisely within the Interrupt Service Routine at the expected hardware-timed intervals:
 *   **100 ms Mode:** Generates a precise 100 ms high/low pulse width (5 Hz frequency).
-*   
-<img width="1872" height="416" alt="image" src="https://github.com/user-attachments/assets/b1cdf925-37ce-4192-ae77-8fec3279caf5" />
+<img width="1873" height="463" alt="image" src="https://github.com/user-attachments/assets/3673b353-e1dd-40de-8f30-8b0882aea56b" />
 
