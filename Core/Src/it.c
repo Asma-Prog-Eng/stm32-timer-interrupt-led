@@ -21,9 +21,9 @@ void SysTick_Handler(void) {
 
 void TIM2_IRQHandler(void) {
 
-	//1. Clear status flag
+	// 1. Clear the Update Interrupt Flag (UIF) safely
 	TIM2->SR &= ~(1U << 0);
-	//2. Toggle PA10 for 100 ms 
+	// 2. Toggle the LED pin
 	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_10);
 
 }
